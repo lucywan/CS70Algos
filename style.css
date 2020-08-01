@@ -1,0 +1,178 @@
+.con {
+	position:relative;
+	display: inline-block;
+}
+
+.foodpic {
+	height: 300px;
+	display: inline-block;
+/*	margin-left: 5pt;
+	margin-right: 5pt;*/
+	margin: 10pt 10pt;
+}
+
+.imgcon {
+	text-align: center;
+}
+.con:hover img {
+	filter: brightness(50%)
+}
+.con:hover .overlay {
+  opacity: 1;
+}
+
+.footer {
+    background-color:  #71EEB8;
+    height: 50pt;
+    margin-top: 60pt;
+/*    border-bottom: solid #3F000F;
+    border-top: solid #3F000F;
+    border-width:4pt;*/
+    color: #3F000F;
+    padding: 10pt 40pt;
+    font: 12pt;
+
+}
+
+img:hover {
+    -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+
+img {
+    transition: 1s ease;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 15pt;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+.nav {
+	background-color: #71EEB8;
+	width: 100%;
+	height:30pt;
+	font-size: 20pt;
+	text-align: center;
+	padding-top: 5pt;
+	
+	border: solid #3F000F;
+	border-width:4pt;
+}
+.b {
+	font-family: 'Lato', sans-serif;
+}
+
+.head {
+/*	position:relative;
+	height: 150pt;
+	max-width: 100%;
+	margin: 0 auto !important; 
+	float: none !important; 
+	background-image: url(img/headerpics/pineapple.jpg);
+	background-size:cover;*/
+position:relative;
+	height: 150pt;
+	background-image: url(img/headerpics/pineapple.jpg);
+	background-size:cover;
+	border-bottom: solid #3F000F;
+	border-width:4pt;
+	margin-bottom: 20pt;
+}
+
+.nav > a {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 15%;
+    text-align: center;
+color: #3F000F;
+}
+	
+
+.head2 {
+
+	color: white;
+/*	width: 80%; 
+	margin-left: 10%;
+	margin-top: 35pt;*/
+		position: absolute; 
+
+	max-height: 50%;
+	max-width: 80%;
+	margin: auto !important; 
+	float: none !important; 
+	top: 0; left: 0; right: 0; bottom: 0;
+		display: flex;
+  justify-content: center;
+  align-items: center;
+/*	float: none !important;*/
+
+	font-size: 20pt;
+	font-weight: 200;
+/*	font-family: 'Georgia', sans-serif;*/
+	text-align: center;
+	vertical-align: center;
+	border: solid #71EEB8;
+	border-width:4pt;
+
+	background-color: rgba(0,0,0, 0.6);
+}
+
+/*.header {
+	font-size: 30pt;
+  border: solid black;
+}
+
+.headcontainer {
+height: 200px;
+margin-bottom: 20pt;
+display: inline-block;
+  vertical-align: middle;
+  width:100%;
+}*/
+
+/*--------------------------------------------------
+----------------------- Portfolio ------------------
+---------------------------------------------------*/
+
+
+
+#filters {
+    margin:1%;
+    padding:0;
+    list-style:none;
+    display: inline-block;
+
+}
+
+#filters li {
+    float:left;
+    text-align: center;
+}
+
+#filters li span {
+    display: block;
+    padding:5px 20px;		
+    text-decoration:none;
+    color:#fff;
+    font-size: 15pt;
+    cursor: pointer;
+    background: #3F000F;
+    margin: 2px;
+}
+
+#filters li span.active {
+    color:#71EEB8;
+}
